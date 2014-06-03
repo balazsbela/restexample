@@ -1,0 +1,67 @@
+extends layout
+
+block content
+    h1= title
+
+    #wrapper
+
+        #userInfo
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Age:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Gender:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Location:
+                |  <span id='userInfoLocation'></span>
+
+        #userList
+            table
+                thead
+                    th UserName
+                    th Email
+                    th Delete
+                tbody
+
+        #addUser
+           fieldset
+            table
+              thead           
+              tbody
+                tr
+                  td 
+                    strong username:                
+                  td 
+                    input#inputUserName(type='text')                
+                tr
+                  td 
+                    strong e-mail:
+                  td 
+                    input#inputUserEmail(type='text')
+                tr                
+                  td 
+                    strong name:
+                  td
+                    input#inputUserFullname(type='text')
+                tr
+                  td 
+                    strong age:
+                  td
+                    input#inputUserAge(type='text')
+                tr
+                  td
+                    strong location:
+                  td
+                    input#inputUserLocation(type='text')
+                tr
+                  td
+                    strong gender:
+                  td
+                    input#inputUserGender(type='text')
+                
+            br
+            button#btnAddUser Add User
